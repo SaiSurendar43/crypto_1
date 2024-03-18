@@ -11,7 +11,10 @@ import { BsFileEarmarkBarGraph } from "react-icons/bs";
 
 const Market = () => {
   return (
-    <main className="maxcontainer bg-gradient-to-r from-neutral-900 to-slate-400 px-4 py-2">
+    <main className="bg-center bg-cover"
+    style={{ backgroundImage: "url(/sky.jpg)" }}
+    >
+      <div className="bg-black/10  backdrop-blur-lg backdrop-brightness-75 maxcontainer px-4 py-2">
       <div className="lg:flex md:flex items-center justify-between">
         <div className=" shadow-lg  mt-3 bg-[#14171E] w-auto  md:w-1/2 p-6 rounded-3xl">
           <button className="flex py-2 px-2 mb-2 item-center justify-center hover:translate-x-5 transition-all duration-300  cursor-pointer w-auto font-bold text-[#2ABDFF] font-sans rounded-2xl bg-[#131313]">
@@ -143,6 +146,7 @@ const Market = () => {
              </div>
            
         </div>
+      </div>
       </div>
     </main>
   );

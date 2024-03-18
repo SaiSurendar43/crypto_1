@@ -8,7 +8,10 @@ import { BiLogoApple } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between bg-gradient-to-r from-neutral-800 to-slate-200   items-center px-4 py-2 maxcontainer">
+    <nav className="bg-center bg-cover sticky top-0 z-10"
+    style={{backgroundImage:'url(/sky.jpg)'}}
+    >
+   <div className="bg-white/10  backdrop-blur-lg shadow-lg w-full flex justify-between maxcontainer items-center px-4 py-2">
       <Link className="flex" href="/">
         <Image src="/logo.png" width={30} height={30} alt="logo" />
       </Link>
@@ -59,6 +62,7 @@ const Navbar = () => {
       {/* <ul className="px-2 h-full flex   gap-5 lg:gap:12 lg:flex items-center justify-end" >
        
       </ul> */}
+      </div>
     </nav>
   );
 };

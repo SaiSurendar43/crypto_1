@@ -6,9 +6,12 @@ import { GoArrowRight } from "react-icons/go";
 
 const Features = () => {
   return (
-    <main className="maxcontainer bg-gradient-to-r from-neutral-900 to-slate-400 min-h-screen px-4 py-2">
+    <main className="bg-center bg-cover"
+    style={{ backgroundImage: "url(/sky.jpg)" }}
+    >
+      <div className="bg-black/10  backdrop-blur-lg backdrop-brightness-75 min-h-screen px-4 py-2">
       <div className="lg:flex md:flex">
-        <div className=" shadow-lg  mt-3  w-auto  md:w-1/2 p-6 h-[300px] md:h-auto h:auto  rounded-3xl">
+        <div className="mt-3  w-auto  md:w-1/2 p-6 h-[300px] md:h-auto h:auto  rounded-3xl">
           <div>
             <h1 className="text-white  hover:translate-x-7 transition-all  cursor-pointer font-serif font-bold text-xl md:text-5xl">
               Trusted by millions
@@ -29,7 +32,7 @@ const Features = () => {
             </span>
           </button>
         </div>
-        <div className=" shadow-lg  mt-3  w-auto h-[400px] md:h-auto   md:w-1/2 p-2 ml-2  rounded-3xl">
+        <div className="mt-3  w-auto h-[400px] md:h-auto   md:w-1/2 p-2 ml-2  rounded-3xl">
           <div className=" lg:flex flex">
           <div className="shadow-lg  object-contain lg:w-1/2 w:1/2 md:w-[350px]  h-auto">
               <div className="absolute text-white">
@@ -114,6 +117,7 @@ const Features = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </main>
   );
