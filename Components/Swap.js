@@ -137,6 +137,7 @@ export default function Swap() {
     setAnimatedDropdown2(false);
     setShowModal1(false);
   
+  
   };
 
   // Handle swapping logic
