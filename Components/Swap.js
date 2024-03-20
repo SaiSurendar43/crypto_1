@@ -124,7 +124,7 @@ export default function Swap() {
     setAnimatedDropdown2(!animatedDropdown2);
   };
 
-  const handleSelectCrypto1 = (crypto) => {
+  const handleSelectCrypto1 = async(crypto) => {
     setCrypto1(crypto.id);
     setSelectedCryptoName1(`${crypto.name} (${crypto.symbol.toUpperCase()})`);
     localStorage.setItem('selectedCryptoName1',`${crypto.name} (${crypto.symbol.toUpperCase()})`)
@@ -132,6 +132,9 @@ export default function Swap() {
     setDropdown1(false);
     setAnimatedDropdown1(false);
     setShowModal(false);
+    if(crypto1){
+    await handleSwap({ amount: amount });
+    }
   };
 
   useEffect(()=>{
