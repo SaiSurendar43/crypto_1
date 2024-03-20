@@ -257,7 +257,7 @@ const [button2Color, setButton2Color] = useState('#FC72FF');
 <div className="blur-lg absolute right-[90%] top-[10%] rounded-3xl  animate-pulse hover:blur-0 cursor-pointer focus:ring-inset">
    <Image className="rounded-full" src="/logo.png" width={60} height={60}/>
 </div>
-<div className="blur-lg absolute right-[70%] top-[20%] rounded-3xl  animate-bounce hover:blur-0 cursor-pointer focus:ring-inset">
+<div className="blur-lg absolute right-[70%] top-[5%] lg:top-[20%] rounded-3xl  animate-bounce hover:blur-0 cursor-pointer focus:ring-inset">
    <Image className="" src="/second.png" width={60} height={60}/>
 </div>
 
@@ -339,7 +339,7 @@ const [button2Color, setButton2Color] = useState('#FC72FF');
                       type="button"
                       value={selectedCryptoName1}
                       onClick={handlebutton}
-                      className={`inline-flex justify-between items-center w-[130px] sm:w-34 lg:w-full px-5 py-2 font-medium leading-5 text-white text-base ${button1Color === '#131313' ? 'bg-[#131313]' : 'bg-[#FC72FF]'} border-transparent rounded-3xl shadow-sm hover:bg-[#242527] jost focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-zinc-500 active:text-gray-200 transition ease-in-out duration-150 transform hover:scale-105`}
+                      className={`inline-flex justify-between items-center w-[120px] sm:w-34 lg:w-full px-5 py-2 font-medium leading-5 text-white text-base ${button1Color === '#131313' ? 'bg-[#131313]' : 'bg-[#FC72FF]'} border-transparent rounded-3xl shadow-sm hover:bg-[#242527] jost focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-zinc-500 active:text-gray-200 transition ease-in-out duration-150 transform hover:scale-105`}
                       >
                       {selectedCryptoName1} 
                       <svg
