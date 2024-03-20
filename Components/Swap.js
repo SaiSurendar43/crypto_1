@@ -208,7 +208,7 @@ const [button2Color, setButton2Color] = useState('#FC72FF');
     if (storedValue) {
       setSelectedCryptoName1(storedValue);
     }
-  },);
+  },[]);
 
 
 
@@ -396,7 +396,7 @@ const [button2Color, setButton2Color] = useState('#FC72FF');
                     <button
                       type="button"
                       onClick={() => setShowModal1(true)}
-                      className={`inline-flex justify-between items-center w-[130px] sm:w-34 lg:w-full px-5 py-2 text-[18px] font-medium jsot text-xl  text-white  border-transparent rounded-3xl shadow-sm ${button2Color === '#FC72FF' ? 'bg-[#FC72FF]' : ''}   focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-zinc-500 active:text-gray-200 transition ease-in-out duration-150 transform hover:scale-105`}
+                      className={`inline-flex justify-between items-center w-[130px] sm:w-34 lg:w-[200px] px-5 py-2 text-[18px] font-medium jsot text-xl  text-white  border-transparent rounded-3xl shadow-sm ${button2Color === '#FC72FF' ? 'bg-[#FC72FF]' : ''}   focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-zinc-500 active:text-gray-200 transition ease-in-out duration-150 transform hover:scale-105`}
                     >
                       {selectedCryptoName2 || "select token"}
                       <svg
