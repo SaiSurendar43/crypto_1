@@ -6,10 +6,8 @@ import { RiMessage3Fill } from "react-icons/ri";
 
 const Connect = () => {
   return (
-    <main className="bg-center bg-cover"
-    style={{ backgroundImage: "url(/sky.jpg)" }}
+    <main className="maxcontainer px-4 py-2 bg-[#171617]"
     >
-      <div className="bg-black/10  backdrop-blur-lg backdrop-brightness-75 maxcontainer px-4 py-2">
       <div className="mb-5">
         <h1 className="md:text-4xl text-3xl font-serif font-semibold text-white">Connect with us</h1>
       </div>
@@ -57,7 +55,6 @@ const Connect = () => {
           </div>
         </div>
 
-      </div>
       </div>
     </main>
   );

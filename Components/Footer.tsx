@@ -5,10 +5,8 @@ import { FaDiscord } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <main className="bg-center bg-cover"
-    style={{ backgroundImage: "url(/sky.jpg)" }}
+    <main className="maxcontainer px-4 py-2 lg:py-10 md:py-10 bg-[#171617]"
     >
-      <div className="bg-black/10  backdrop-blur-lg backdrop-brightness-75 maxcontainer px-4 py-2 lg:py-10 md:py-10">
       <div className="lg:flex md:flex">
         <div className=" mt-3  w-auto  md:w-1/2 p-6 h-[200px] md:h-auto h:auto  rounded-3xl">
           <div>
@@ -37,28 +35,28 @@ const Footer = () => {
           <div className="md:flex flex flex-wrap flex-row md:flex-wrap md:flex-row lg:flex-wrap lg:flex-row">
             <div className="w-1/2">
               <h1 className="text-xl font-sans font-bold text-white">APP</h1>
-              <p className="text-base text-gray-400 font-sans font-medium hover:text-white cursor-pointer">Tokens</p>
-              <p className="text-base text-gray-400 font-sans font-medium hover:text-white cursor-pointer">NFTs</p>
-              <p className="text-base text-gray-400 font-sans font-medium hover:text-white cursor-pointer">Swap</p>
-              <p className="text-base text-gray-400 font-sans font-medium hover:text-white cursor-pointer">Pool</p>
+              <p className="text-base text-[#999999] font-sans font-medium hover:text-white cursor-pointer">Tokens</p>
+              <p className="text-base text-[#999999] font-sans font-medium hover:text-white cursor-pointer">NFTs</p>
+              <p className="text-base text-[#999999] font-sans font-medium hover:text-white cursor-pointer">Swap</p>
+              <p className="text-base text-[#999999] font-sans font-medium hover:text-white cursor-pointer">Pool</p>
             </div>
             <div className="w-1/2">
             <h1 className="text-xl font-sans font-bold text-white">Protocol</h1>
-              <p className="text-base text-gray-400 font-sans font-medium hover:text-white cursor-pointer">Governance</p>
-              <p className="text-base text-gray-400 font-sans font-medium hover:text-white cursor-pointer">Developers</p>
+              <p className="text-base text-[#999999] font-sans font-medium hover:text-white cursor-pointer">Governance</p>
+              <p className="text-base text-[#999999] font-sans font-medium hover:text-white cursor-pointer">Developers</p>
             </div>
             <div className="w-1/2">
             <h1 className="text-xl font-sans font-bold text-white">Company</h1>
-              <p className="text-base text-gray-400 font-sans font-medium hover:text-white cursor-pointer">Careers</p>
-              <p className="text-base text-gray-400 font-sans font-medium hover:text-white cursor-pointer">Blog</p>
-              <p className="text-base text-gray-400 font-sans font-medium hover:text-white cursor-pointer">Brand Assets</p>
-              <p className="text-base text-gray-400 font-sans font-medium hover:text-white cursor-pointer">Term & Privacy</p>
-              <p className="text-base text-gray-400 font-sans font-medium hover:text-white cursor-pointer">Trademark Policy</p>
+              <p className="text-base text-[#999999] font-sans font-medium hover:text-white cursor-pointer">Careers</p>
+              <p className="text-base text-[#999999] font-sans font-medium hover:text-white cursor-pointer">Blog</p>
+              <p className="text-base text-[#999999] font-sans font-medium hover:text-white cursor-pointer">Brand Assets</p>
+              <p className="text-base text-[#999999] font-sans font-medium hover:text-white cursor-pointer">Term & Privacy</p>
+              <p className="text-base text-[#999999] font-sans font-medium hover:text-white cursor-pointer">Trademark Policy</p>
             </div>
             <div className="w-1/2">
             <h1 className="text-xl font-sans font-bold text-white">Need help?</h1>
-              <p className="text-base text-gray-400 font-sans font-medium hover:text-white cursor-pointer">Contact Us</p>
-              <p className="text-base text-gray-400 font-sans font-medium hover:text-white cursor-pointer">Help Center</p>
+              <p className="text-base text-[#999999] font-sans font-medium hover:text-white cursor-pointer">Contact Us</p>
+              <p className="text-base text-[#999999] font-sans font-medium hover:text-white cursor-pointer">Help Center</p>
             </div>
           </div>
         </div>
@@ -74,7 +72,6 @@ const Footer = () => {
               <FaDiscord size={30} />
             </span>
           </button>
-          </div>
     </main>
   );
 };

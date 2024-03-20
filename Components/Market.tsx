@@ -11,12 +11,10 @@ import { BsFileEarmarkBarGraph } from "react-icons/bs";
 
 const Market = () => {
   return (
-    <main className="bg-center bg-cover"
-    style={{ backgroundImage: "url(/sky.jpg)" }}
+    <main className="maxcontainer px-4 py-4 bg-[#171617]"
     >
-      <div className="bg-black/10  backdrop-blur-lg backdrop-brightness-75 maxcontainer px-4 py-2">
       <div className="lg:flex md:flex items-center justify-between">
-        <div className=" shadow-lg  mt-3 bg-[#14171E] w-auto  md:w-1/2 p-6 rounded-3xl">
+        <div className=" shadow-lg  mt-3 bg-[#14171E] w-auto lg:h-[500px] md:h-[500px]  md:w-1/2 p-6 rounded-3xl">
           <button className="flex py-2 px-2 mb-2 item-center justify-center hover:translate-x-5 transition-all duration-300  cursor-pointer w-auto font-bold text-[#2ABDFF] font-sans rounded-2xl bg-[#131313]">
             <span className="mt-1 hover:-translate-x-1 transition-all duration-300 px-2 text-[#2ABDFF] ">
               <FaLaptop />
@@ -81,7 +79,7 @@ const Market = () => {
             />
           </div>
         </div>
-        <div className=" shadow-lg  mt-3 bg-[#322132] w-auto h-[420px] md:h-[450px] lg:h-[420px] ml-2 md:w-1/2 p-6  rounded-xl">
+        <div className=" shadow-lg  mt-3 bg-[#322132] w-auto h-[420px] md:h-full lg:h-[500px] ml-2 md:w-1/2 p-6  rounded-xl">
         <button className="flex py-2 px-2 mb-2 item-center hover:-translate-x-5 transition-all duration-300 justify-center cursor-pointer w-auto font-bold text-[#FC72FF] font-sans rounded-2xl bg-[#131313]">
             <span className="mt-1 px-2 hover:translate-x-3 transition-all duration-300 text-[#FC72FF] ">
               <LuWalletCards/>
@@ -91,14 +89,14 @@ const Market = () => {
               <GoArrowRight /> 
             </span>
           </button>
-          <div className="text-[#FC72FF] text-3xl hover:translate-x-7 transition-all duration-300  md:text-4xl absolute font-bold">
+          <div className="text-[#FC72FF] mx-5 text-3xl sticky -top-32 z-10  md:text-4xl font-bold">
             <Link href="/">
               The wallet built for swaping Available on ios and Android
               <p></p>
             </Link>
           </div>
-             <div className="object-cover z-10 px-2">
-            <Image className="hover:-translate-y-5 transition-all" src="/swaplist.png" width={500} height={300} alt='tap'/>
+             <div className="object-cover px-2">
+            <Image className="hover:-translate-y-20 transition-shadow" src="/swaplist.png" width={500} height={500} alt='tap'/>
              </div>
         </div>
       </div>
@@ -146,7 +144,6 @@ const Market = () => {
              </div>
            
         </div>
-      </div>
       </div>
     </main>
   );

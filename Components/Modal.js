@@ -12,7 +12,7 @@ const Modal = ({isvisible,onClose,children}) => {
   return (
     <div className="fixed inset-0  bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center" id="wrapper" 
     onClick={handleClose}>    
-      <div className="w-[400px] bg-[#131313] px-2  text-white rounded-2xl overflow-y-scroll overflow-x-hidden backdrop-blur-lg backdrop-brightness-0 h-[400px]">
+      <div className="w-[500px] bg-[#131313]/100 h-[600px] lg:h-[400px] md:h-[400px] md:mt-3 lg:mt-3 px-2 mt-40 text-white rounded-[20px] border border-[#3A3C43] focus:outline-none overflow-y-scroll md-h-[400px]  lg-h-[400px]">
        <div className="p-2 sticky top-0 z-10 flex justify-between rounded-xl "> 
        Select a Token
        <button
